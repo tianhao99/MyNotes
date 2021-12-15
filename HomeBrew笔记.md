@@ -57,7 +57,6 @@ git remote set-url origin https://github.com/Homebrew/homebrew-core.git
 ```
 
 - 重置homebrew-bottles
+  - 将刚添加到~/.bash_profile文件的语句注释掉即可
 
-```bash
-将刚添加到~/.bash_profile文件的语句注释掉即可
-```
+
