@@ -1218,8 +1218,14 @@ log4j.logger.java.sql.PreparedStatement=DEBUG
 3、setting设置日志实现
 
 ```xml
+<!--日志-->
 <settings>
-   <setting name="logImpl" value="LOG4J"/>
+    <setting name="logImpl" value="LOG4J"/>
+    <!--开启驼峰命名转换，就是数据库字段如果是create_id,字段使用驼峰命名createId
+          这样就不用别名处理，开启这个配置后就能自动识别，仅限驼峰命名-->
+    <setting name="mapUnderscoreToCamelCase" value="true"/>
+    <!--开起全局缓存，默认是开启的，这里显式开启一下-->
+    <setting name="cacheEnabled" value="true"/>
 </settings>
 ```
 
