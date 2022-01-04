@@ -4518,7 +4518,7 @@ Java在java.math包中提供的API类BigDecimal，用来对超过16位有效位�
 
 ### 7.1 Tomcat 简介
 
-Tomcat是Apache 软件基金会（Apache Software Foundation）的Jakarta 项目中的一个核心项目，由Apache、Sun 和其他一些公司及个人共同开发而成。由于有了Sun 的参与和支持，最新的Servlet 和JSP 规范总是能在Tomcat 中得到体现，因为<font color='blue'>Tomcat 技术先进、性能稳定，而且免费</font>，因而深受Java 爱好者的喜爱并得到了部分软件开发商的认可，成为目前比较流行的Web 应用服务器。目前最新版本是9.0。我们要用的是7.0。
+Tomcat是Apache 软件基金会（Apache Software Foundation）的Jakarta 项目中的一个核心项目，由Apache、Sun 和其他一些公司及个人共同开发而成。由于有了Sun 的参与和支持，最新的Servlet 和JSP 规范总是能在Tomcat 中得到体现，因为<font color='blue'>Tomcat 技术先进、性能稳定，而且免费</font>，因而深受Java 爱好者的喜爱并得到了部分软件开发商的认可，成为目前比较流行的Web 应用服务器。
 
 因为tomcat服务器软件需要使用java环境，所以需要正确的配置java_home
 
@@ -8461,7 +8461,7 @@ callback 函数是一种以参数形式传递给另一个函数的函数。
 
 该函数调用应该包含 URL 以及发生 onreadystatechange 事件时执行的任务（每次调用可能不尽相同）：
 
-```
+```jsp
 function myFunction()
 {
 loadXMLDoc("ajax_info.txt",function()

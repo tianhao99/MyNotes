@@ -27,8 +27,20 @@ $ git config --list
 $ git config -e [--global]
 
 # 设置提交代码时的用户信息
-$ git config [--global] user.name "[name]"
-$ git config [--global] user.email "[email address]"
+$ git config --global user.name "[name]"
+$ git config --global user.email "[email address]"
+
+# 查看提交代码时的用户信息
+$ git config user.name
+$ git config user.email
+
+#修改本地仓库的用户名和邮箱：
+$ git config --replace-all user.name "name"
+$ git config --replace-all user.email "123@qq.com"
+
+# 删除全局的用户和邮箱
+$ git config --global --unset user.name
+$ git config --global --unset user.email
 ```
 
 ### 增加/删除文件

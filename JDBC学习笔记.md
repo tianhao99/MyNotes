@@ -230,7 +230,7 @@ public void testConnection() throws SQLException {
     //3、提供连接需要的用户名和密码
     Properties info = new Properties();
     info.setProperty("user","root");
-    info.setProperty("password","SHAN153X");
+    info.setProperty("password","123456");
     //4、获取连接
     Connection con = driver.connect(url,info);
     System.out.println(con);
@@ -254,7 +254,7 @@ public void testConnection2() throws Exception {
     //3、提供连接需要的用户名和密码
     Properties info = new Properties();
     info.setProperty("user","root");
-    info.setProperty("password","SHAN153X");
+    info.setProperty("password","123456");
     //4、获取连接
     Connection con = driver.connect(url,info);
     System.out.println(con);
@@ -273,7 +273,7 @@ public void testConnection2() throws Exception {
         //2、提供另外3个连接的基本信息
         String url = "jdbc:mysql://localhost:3306/city99?serverTimezone=GMT%2B8";
         String user = "root";//账号密码也可以还用properties封装，getConnection也提供了相应的构造器
-        String password = "SHAN153X";
+        String password = "123456";
         //3、注册驱动
 //        DriverManager.registerDriver(driver); //此步可以省略，
         //4、获取连接
@@ -292,7 +292,7 @@ public void testConnection4() throws Exception {
     //1、提供另外3个连接的基本信息
     String url = "jdbc:mysql://localhost:3306/city99?serverTimezone=GMT%2B8";
     String user = "root";//账号密码也可以还用properties封装，getConnection也提供了相应的构造器
-    String password = "SHAN153X";
+    String password = "123456";
     //2、获取Driver实现类对象
     Class.forName("com.mysql.cj.jdbc.Driver");
 
@@ -373,7 +373,7 @@ public class ConnectionTest {
 
 ```properties
 user=root
-password=SHAN153X
+password=123456
 url=jdbc:mysql://localhost:3306/city99?serverTimezone=GMT%2B8
 driverClass=com.mysql.cj.jdbc.Driver
 ```
@@ -2249,7 +2249,7 @@ public class User {
         //加载jdbc驱动
         cpds.setJdbcUrl("jdbc:mysql://localhost:3306/city99?serverTimezone=GMT%2B8&rewriteBatchedStatements=true");
         cpds.setUser("root");
-        cpds.setPassword("SHAN153X");
+        cpds.setPassword("123456");
         //通过设置相关参数，对数据库连接池进行管理
         //设置初始时数据库连接池中的连接数
         cpds.setInitialPoolSize(10);
@@ -2347,7 +2347,7 @@ public void testOne() throws SQLException {
     source.setDriverClassName("com.mysql.cj.jdbc.Driver");
     source.setUrl("jdbc:mysql://localhost:3306/city99?serverTimezone=GMT%2B8&rewriteBatchedStatements=true");
     source.setUsername("root");
-    source.setPassword("SHAN153X");
+    source.setPassword("123456");
 
     //可以设置其他设计数据库连接池管理的相关属性
     source.setInitialSize(10);
@@ -2389,7 +2389,7 @@ public static Connection getConnection_dbcp() throws SQLException {
 driverClassName=com.mysql.cj.jdbc.Driver
 url=jdbc:mysql://localhost:3306/city99?serverTimezone=GMT%2B8&rewriteBatchedStatements=true
 username=root
-password=SHAN153X
+password=123456
 initialSize=10
 #...
 ```
@@ -2453,7 +2453,7 @@ Druid是阿里巴巴开源平台上一个数据库连接池实现，它结合了
 driverClassName=com.mysql.cj.jdbc.Driver
 url=jdbc:mysql://localhost:3306/city99?serverTimezone=GMT%2B8&rewriteBatchedStatements=true
 username=root
-password=SHAN153X
+password=123456
 
 initialSize=10
 maxActive=20
