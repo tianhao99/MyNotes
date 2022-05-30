@@ -470,13 +470,22 @@ selenium原本是自动化测试软件，模拟真人操作浏览器
 
 **注意：**Python文件中不能有selenium为名字的文件，要不然会报错
 
-驱动下载地址：http://npm.taobao.org/mirrors/chromedriver 版本一定要对应谷歌浏览器版本
+驱动下载地址：https://chromedriver.chromium.org/home版本一定要对应谷歌浏览器版本
 
 谷歌浏览器版本查看：![image-20211104091059216](https://pledge99.oss-cn-beijing.aliyuncs.com/img/image-20211104091059216.png)
 
 ---->帮助---->关于Google Chrome
 
 ![image-20211104091626637](https://pledge99.oss-cn-beijing.aliyuncs.com/img/image-20211104091626637.png)
+
+将刚刚解压的chromedriver文件放置在/usr/local/bin目录中。Mac下/usr/local/bin目录默认对于Finder是隐藏，如果需要到/usr/local/bin中去，打开Finder，然后使用command+shift+G，在弹出的弹窗中填写/usr/local/bin就可以跳到该目录了。
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210629165957126.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NjMwODkwNA==,size_16,color_FFFFFF,t_70)
+在终端中输入chromedriver --version验证是否安装成功
+查看到安装的驱动的版本，与本地浏览器的版本一致后，则可正常运行代码啦～
+
+
+
+
 
 #### 对象页面切换
 
